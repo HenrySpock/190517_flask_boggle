@@ -1,0 +1,8 @@
+export SQLALCHEMY_TRACK_MODIFICATIONS=False
+export SQLALCHEMY_ECHO=True 
+export DEBUG_TB_INTERCEPT_REDIRECTS=False
+export FLASK_DEBUG=True
+export FLASK_ENV=development
+export TEMPLATES_AUTO_RELOAD=True
+export FLASK_APP=app/app.py
+export SESSION_TYPE=filesystem

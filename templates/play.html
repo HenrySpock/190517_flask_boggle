@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Play{% endblock %}
+
+{% block content %}
+  <div id="title">
+    <h1>Let's Play Boggle!</h1>
+    <p>Here is your board:</p>
+  </div>
+
+  <table class="table">
+    {% for row in board %}
+      <tr>
+        {% for letter in row %}
+          <td>{{ letter }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
+
+  <div id="player">
+    <div id="result"></div>
+    <form id="word-form">
+      <label for="word-input">Enter a word:</label>
+      <input type="text" id="word-input">
+      <button type="submit" class="btn btn-primary" id="submit-guess">Submit</button>
+    </form>
+    <p>Your score: <span id="score"></span></p>
+    <div id="game-over" style="display: none">Game Over</div>
+    <div id="timer">Time remaining: <span id="time"></span></div>
+    <div id="times-played">Number of times played: <span id="times-played-count"></span></div>
+    <div id="high-score">High score: <span id="high-score-count"></span></div>
+  </div>
+
+{% endblock %}
+ 

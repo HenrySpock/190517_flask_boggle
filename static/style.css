@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(53, 53, 53);
+    color: rgb(177, 177, 177)
+}
+
+.table {
+    background-color: rgb(119, 123, 179);
+}
+
+#player, #title {
+    padding: 10px 30px 10px;
+    background-color: rgb(119, 123, 179);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 
+} 
